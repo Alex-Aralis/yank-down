@@ -7,5 +7,5 @@ export const curryCollector = (distance, acc = [], thunk = false) => {
       }
     );
 
-  return thunk;
+  return thunk || [];
 };
