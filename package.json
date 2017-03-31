@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Alex Aralis <alex.aralis@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alex-Aralis/yank-down.git"
+  },
   "scripts": {
     "test": "mocha --require babel-register"
   },
