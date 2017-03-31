@@ -1,3 +1,3 @@
-import dog from 'dsf';
+import dog from './other';
 
 export default dog;
