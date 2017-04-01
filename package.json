@@ -10,18 +10,21 @@
     "url": "https://github.com/Alex-Aralis/yank-down.git"
   },
   "scripts": {
-    "test": "mocha --require babel-register"
+    "test": "mocha --require babel-register",
+    "build": "gulp build"
   },
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-eslint": "^7.2.1",
     "babel-preset-env": "^1.3.2",
     "babel-register": "^6.24.0",
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
     "eslint": "^3.18.0",
     "eslint-plugin-import": "^2.2.0",
-    "mocha": "^3.2.0",
-    "chai": "^3.5.0"
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "mocha": "^3.2.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
