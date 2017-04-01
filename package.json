@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Alex Aralis <alex.aralis@gmail.com>",
   "license": "MIT",
+  "keywords": ["curry", "argmuments", "functional"],
   "repository": {
     "type": "git",
     "url": "https://github.com/Alex-Aralis/yank-down.git"
