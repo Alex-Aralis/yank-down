@@ -6,3 +6,4 @@ yarn.lock
 gulpfile.babel.js
 src/**/*
 test/**/*
+yarn-error.log
