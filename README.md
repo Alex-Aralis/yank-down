@@ -60,3 +60,21 @@ console.log(yankedMakeArray(1)(2)(3)); // [2, 1, 3]
 ```
 
 *JUST WOW.*
+
+### Yank can be called using a binding.  
+
+also, yankDown is exported as yank
+
+```javascript
+import { yank } from 'yankDown';
+
+// this is equivalent to
+yank(makeArray)(1);
+
+// this
+yank.bind(makeArray)(1);
+
+// and this (using new :: function binding)
+makeArray::yank(1);
+
+```

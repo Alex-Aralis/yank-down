@@ -9,4 +9,12 @@ describe('apply', function () {
 
     expect(result).to.deep.equal(argsList);
   });
+
+  it('should work after being bound', function () {
+    const argsList = [[1], [2, 3], [4]];
+    const thunk = collect(argsList.length);
+    const result = thunk::apply(argsList);
+
+    expect(result).to.deep.equal(argsList);
+  });
 });
