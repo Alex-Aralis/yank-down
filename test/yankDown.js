@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { yankDown, collect, apply } from '../src';
+import { yankDown, collect, apply, yank } from '../src';
 
 describe('yankDown', function () {
   it('should yank down arg 1', function () {
@@ -13,6 +13,10 @@ describe('yankDown', function () {
     expect(result).to.deep.equal([[2], [1], [3]]);
   });
 
+
+  it('should be exorted as yank', function () {
+    expect(yank === yankDown);
+  });
 
   it('should yank down last arg', function () {
     const args = [1, 2, 3].map(entry => [entry]);
@@ -53,5 +57,16 @@ describe('yankDown', function () {
     yankDown(thunk)(0);
 
     expect(thunk('foo')).to.equal('foo');
+  });
+
+  it('should detect being bound', function () {
+    const args = [1, 2, 3].map(entry => [entry]);
+    let thunk = collect(3);
+
+    thunk = thunk::yank(2);
+
+    const result = apply(thunk)(args);
+
+    expect(result).to.deep.equal([[2], [3], [1]]);
   });
 });

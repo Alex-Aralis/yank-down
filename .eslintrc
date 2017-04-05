@@ -108,7 +108,7 @@
     "no-implicit-coercion": 2, // disallow the type conversions with shorter notations
     "no-implicit-globals": 2, // disallow var and named functions in global scope
     "no-implied-eval": 2, // disallow use of eval()-like methods
-    "no-invalid-this": 2, // disallow this keywords outside of classes or class-like objects
+    "no-invalid-this": 0, // DONT disallow this keywords outside of classes or class-like objects
     "no-iterator": 2, // disallow usage of __iterator__ property
     "no-labels": 2, // disallow use of labeled statements
     "no-lone-blocks": 2, // disallow unnecessary nested blocks
@@ -222,7 +222,7 @@
     "no-array-constructor": 2, // disallow use of the Array constructor
     "no-bitwise": 2, // disallow use of bitwise operators
     "no-continue": 2, // disallow use of the continue statement
-    "no-inline-comments": 2, // disallow comments inline after code
+    "no-inline-comments": 0, // DONT disallow comments inline after code
     "no-lonely-if": 2, // disallow if as the only statement in an else block
     "no-mixed-spaces-and-tabs": 2, // disallow mixed spaces and tabs for indentation (recommended)
     "no-multiple-empty-lines": [2, {"max": 2}], // disallow multiple empty lines
@@ -234,7 +234,7 @@
     "no-spaced-func": 2, // disallow space between function identifier and application (fixable)
     "no-ternary": 0, // disallow the use of ternary operators
     "no-trailing-spaces": 2, // disallow trailing whitespace at the end of lines (fixable)
-    "no-underscore-dangle": 2, // disallow dangling underscores in identifiers
+    "no-underscore-dangle": 0, // DONT disallow dangling underscores in identifiers
     "no-unneeded-ternary": 2, // disallow the use of ternary operators when a simpler alternative exists
     "no-whitespace-before-property": 2, // disallow whitespace before properties
     "object-curly-spacing": [2, "always"], // require or disallow padding inside curly braces (fixable)
