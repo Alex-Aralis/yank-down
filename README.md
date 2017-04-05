@@ -39,6 +39,7 @@ const factoryFactory =
   (factoryName, factoryConfig = {}) =>
     (objProps = {}) =>
       { ...objProps, factoryConfig, type: factoryName }
+;
 
 const flippedFF = yankDown(factoryFactory)(1); // yankDown properly flips calls
 ```
@@ -96,11 +97,11 @@ import { collect } from 'yank-down';
 
 cosnt thunk = collect(3) // produces a depth 3 thunk.
 
-expect(thunk(1)(2)(3)).to.deep.equal([[1], [2], [3]])
+expect(thunk(1)(2)(3)).to.deep.equal([[1], [2], [3]]);
 
 const cbThunk = collect(4, console.log);
 
-cbThunk('a', 'e')('b')('c')('d') // prints [['a', 'e'], ['b'], ['c'], ['d']]
+cbThunk('a', 'e')('b')('c')('d'); // prints [['a', 'e'], ['b'], ['c'], ['d']]
 ```
 
 ### apply
@@ -117,8 +118,8 @@ import { apply } from 'yank-down';
 
 apply(makeArray)([[1], [2]]); // returns c => [1, 2, c]
 
-apply(makeArray)([['one'], ['two'], ['three']]) // returns ['one', 'two', 'three']
+apply(makeArray)([['one'], ['two'], ['three']]); // returns ['one', 'two', 'three']
 
 // apply can also use bind syntax to get its functions
-makeArray::apply([['such'], ['cool']])('amaze') // returns ['such', 'cool', 'amaze']
+makeArray::apply([['such'], ['cool']])('amaze'); // returns ['such', 'cool', 'amaze']
 ```
