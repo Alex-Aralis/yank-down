@@ -1,14 +1,16 @@
 {
   "name": "yank-down",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Rearrange curried arguments",
   "main": "index.js",
   "author": "Alex Aralis <alex.aralis@gmail.com>",
   "license": "MIT",
   "keywords": [
     "curry",
+    "currying",
     "argmuments",
-    "functional"
+    "functional",
+    "function bind syntax"
   ],
   "repository": {
     "type": "git",
