@@ -1,4 +1,4 @@
-# Yank Down
+# Yank Down [![npm version](https://badge.fury.io/js/yank-down.svg)](https://badge.fury.io/js/yank-down)
 
 Have you ever been unsure what value to pass first?
 
