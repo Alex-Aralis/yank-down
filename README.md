@@ -1,4 +1,4 @@
-# Yank Down [![npm version](https://badge.fury.io/js/yank-down.svg)](https://badge.fury.io/js/yank-down)
+# Yank Down [![npm version](https://badge.fury.io/js/yank-down.svg)](https://badge.fury.io/js/yank-down) [![devpendencies](https://david-dm.org/Alex-Aralis/yank-down.svg)](https://david-dm.org/Alex-Aralis/yank-down)
 
 Have you ever been unsure what value to pass first?
 
