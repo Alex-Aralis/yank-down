@@ -5,13 +5,13 @@
 
 
 
-Have you ever been unsure what value to pass first?
+Have you ever been unsure what value to pass first in a curried function?
 
 ```javascript
 const divide = numerator => denominator => numerator/denominator;
 ```
 
-but later found to your horror that it would have been better the other way around?
+and ended up getting it wrong?
 
 ```javascript
 const needToBeDividedBy3 = [1,3,4,5,2];
@@ -21,7 +21,7 @@ const wrongAnswer = needToBeDivided.map(divide(3));
                                      // not this would 3/number :/
 ```
 
-Well then, say hello to yankDown, the titular function of this module.
+Enter yankDown, the titular function of this module.
 
 ```javascript
 import { yankDown } from 'yank-down'; // import yankDown
