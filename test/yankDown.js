@@ -59,11 +59,22 @@ describe('yankDown', function () {
     expect(thunk('foo')).to.equal('foo');
   });
 
-  it('should detect being bound', function () {
+  it('should detect being bound to a function', function () {
     const args = [1, 2, 3].map(entry => [entry]);
     let thunk = collect(3);
 
     thunk = thunk::yank(2);
+
+    const result = apply(thunk)(args);
+
+    expect(result).to.deep.equal([[2], [3], [1]]);
+  });
+
+  it('should ignore being bound to anything other than a function', function () {
+    const args = [1, 2, 3].map(entry => [entry]);
+    let thunk = collect(3);
+
+    thunk = {}::yank(thunk)(2);
 
     const result = apply(thunk)(args);
 
