@@ -18,7 +18,7 @@ const needToBeDividedBy3 = [1,3,4,5,2];
 
 const wrongAnswer = needToBeDivided.map(divide(3));
                                      // ^^^^^^^^^
-                                     // not this would 3/number :/
+                                     // would return 3/number :/
 ```
 
 Enter yankDown, the titular function of this module.
@@ -26,11 +26,11 @@ Enter yankDown, the titular function of this module.
 ```javascript
 import { yankDown } from 'yank-down'; // import yankDown
 
-const flippedDivide = yankDown(divide)(1); // yank arg 1 to be first arg
+const flippedDivide = yankDown(divide)(1); // yank arg 1 to be arg 0
 
 const correctAnswer = needToBeDivided.map(flippedDivide(3));
                                        // ^^^^^^^^^^^^^^^^
-                                       // arg 1 yanked down to arg 0 pos
+                                       // arg 1 yanked down to arg 0
 ```
 
 _AMAZING!!!_
@@ -49,7 +49,7 @@ const factoryFactory =
 const flippedFF = yankDown(factoryFactory)(1); // yankDown properly flips calls
 ```
 
-_SO CONVENIENT~~~~_
+_SO CONVENIENT_
 
 ### Arbitrary Curry Depth
 
@@ -67,7 +67,7 @@ console.log(yankedMakeArray(1)(2)(3)); // [2, 1, 3]
 
 *JUST WOW.*
 
-### Yank can be called using a binding.  
+### Yank supports binding syntax.
 
 also, yankDown is exported as yank
 
@@ -85,7 +85,7 @@ makeArray::yank(1);
 
 ```
 
-## yank-down also has 2 other utility function
+## yank-down also has 2 other utility functions
 
 ### collect
 
