@@ -1,9 +1,9 @@
-**/node_modules
-yarn.lock
-.eslintrc*
-.babelrc*
-.gitignore
-gulpfile.babel.js
-src/**/*
-test/**/*
-yarn-error.log
+/**/*.lock              # lock files
+/**/.*                  # dot files
+/**/*.log               # log files
+/gulpfile.*             # gulpfiles
+
+/src/                   # src dir
+/test/                  # test dir
+/coverage/              # coverage dir
+/node_modules/          # node_modules
