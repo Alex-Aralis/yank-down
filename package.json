@@ -1,6 +1,6 @@
 {
   "name": "yank-down",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Rearrange curried arguments",
   "main": "index.js",
   "author": "Alex Aralis <alex.aralis@gmail.com>",
