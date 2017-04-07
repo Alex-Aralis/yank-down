@@ -1,9 +1,8 @@
-/**/*.lock              # lock files
-/**/.*                  # dot files
-/**/*.log               # log files
-/gulpfile.*             # gulpfiles
+# blacklist everything
+/**/*
 
-/src/                   # src dir
-/test/                  # test dir
-/coverage/              # coverage dir
-/node_modules/          # node_modules
+# whitelist only stuff needed in npm package
+!/package.json
+!/README.md
+!/index.js
+!/lib/**/*.js
