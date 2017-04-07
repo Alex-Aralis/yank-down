@@ -1,6 +1,6 @@
 {
   "name": "yank-down",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Rearrange curried arguments",
   "main": "index.js",
   "author": "Alex Aralis <alex.aralis@gmail.com>",
@@ -19,7 +19,8 @@
   "scripts": {
     "test": "nyc --reporter=lcovonly mocha --require babel-register -R spec",
     "build": "gulp build",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "prepare": "gulp build"
   },
   "devDependencies": {
     "babel": "^6.23.0",
